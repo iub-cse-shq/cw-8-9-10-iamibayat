@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Simple Node App</title>
+</head>
+
+<body>
+    <h1>All Articles</h1>
+    <% console.log(articles) %>
+        <ul>
+            <% for(let i=0;i<articles.length;i++){ %>
+                <li>
+                    <%= articles[i].title %>
+                        <%= articles[i].content %>
+                </li>
+                <% } %>
+
+        </ul>
+</body>
+
+</html>
